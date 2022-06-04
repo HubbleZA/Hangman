@@ -91,6 +91,7 @@ while True:
                 f.write("%s" % item)
         f.close()
         guess_num = 0
+        the_word = the_word.strip()
         the_word_list = list(the_word)
         the_word_len = len(the_word_list)
 #Putting word into a list
