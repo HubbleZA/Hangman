@@ -1,7 +1,7 @@
 import random
 import re
 
-word = open("Lists/words.txt","r")
+word = open(r"H:\OneDrive\Programme\Python for Everybody\Hangman\Hangman\Lists\words.txt","r")
 listwords = word.readlines()
 word.close()
 listeasy =[]
@@ -80,13 +80,13 @@ while True:
                     print("Please enter the correct input")
                     exit()
 #Saving Lists to text files
-        with open('Lists/listeasy.txt','w') as f:
+        with open(r'H:\OneDrive\Programme\Python for Everybody\Hangman\Hangman\Lists\listeasy.txt','w') as f:
             for item in listeasy:
                 f.write("%s" % item)
-        with open('Lists/listmed.txt','w') as f:
+        with open(r'H:\OneDrive\Programme\Python for Everybody\Hangman\Hangman\Lists\listmed.txt','w') as f:
             for item in listmed:
                 f.write("%s" % item)
-        with open('Lists/listhard.txt','w') as f:
+        with open(r'H:\OneDrive\Programme\Python for Everybody\Hangman\Hangman\Lists\listhard.txt','w') as f:
             for item in listhard:
                 f.write("%s" % item)
         f.close()
